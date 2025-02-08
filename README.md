@@ -35,6 +35,8 @@ The project is an API system that utilizes Chat-GPT for intelligent translation 
 
 `pip install -r requerements.txt`
 
+* Edit settings file from $PATH_TO_PROJECT/translate_service/translate_service/settings.py: edit `AUTHORIZATION` and `COOKIE` for openAI author-key to connect with your models
+
 * Run project
 
 `cd $PATH_TO_PROJECT/translate_service/`
