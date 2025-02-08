@@ -44,4 +44,4 @@ The project is an API system that utilizes Chat-GPT for intelligent translation 
 `python manage.py runserver 0.0.0.0:8000`
 
 ## Demo video: 
-https://www.youtube.com/watch?v=SQ0UTEXp3SU
+https://www.youtube.com/watch?v=xGunCet1jxc
