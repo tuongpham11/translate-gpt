@@ -5,25 +5,37 @@ Nhóm 10: Translation System for Simple Language Pairs
 23025109	Nguyễn Hữu Tú 
 24025046	Phạm Mạnh Tường
 
-1.	Giới thiệu về hệ thống
-Cặp ngôn ngữ Anh-Việt
-Input: cụm từ hoặc câu tiếng Anh/Việt, lựa chọn dịch sang tiếng Anh/Việt
-Output: cụm từ hoặc câu được dịch chính xác
-Yêu cầu áp dụng: Process - Technical Debt - Ethics - Fairness
- 
+## Introduction
+The project is an API system that utilizes Chat-GPT for intelligent translation between Vietnamese and English. The project writed with python django framework.
 
-2.	Tiếp cận
- 
+## Module
+* translate_app
+- API: translate, getdata, likeorunlike, suggest
+- translate: is API to call AI translate text from one language to another
+- getdata: is API to get data log of a request
+- likeorunlike: is API to update state like or dislike or nothing
+- Suggest: is API to update suggetion of user for result of request.
 
- 
+## Technology use
+* python 3.9
+* Django
+* mongodb
 
-3.	Data
--	Tìm các nguồn từ các bài báo, khai thác LLMs, tìm kiếm với các từ khóa theo chủ đề
--	Xử lý data
-4.	Finetune Model
--	Tạo file jsonl để finetune
--	Model gpt-4o-2024-08-06
+## RUN
+* start mongodb
 
-5.	Demo Model và App
+`cd $PATH_TO_PROJECT/`
 
-Demo video: https://www.youtube.com/watch?v=SQ0UTEXp3SU
+`docker-compose up -d`
+
+* Install requrements
+
+`cd $PATH_TO_PROJECT/translate_service/`
+
+`pip install -r requerements.txt`
+
+* Run project
+
+`cd $PATH_TO_PROJECT/translate_service/`
+
+`python manage.py runserver 0.0.0.0:8000`
